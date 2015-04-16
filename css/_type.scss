@@ -1,4 +1,7 @@
 $font-family: "Helvetica-Neue", Helvetica, sans-serif;
+$league: "league-gothic",sans-serif;
+$lato: "lato", sans-serif;
+$prater: "ff-prater-block-web", sans-serif;
 
 body {
 	font-family: $font-family;
@@ -9,26 +12,103 @@ p {
 	font-size: 1rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	line-height: 1.3;
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 .league {
-	font-family: "league-gothic",sans-serif;
+	font-family: $league;
 }
 
 .lato {
-	font-family: "league-gothic",sans-serif;
+	font-family: $lato;
 }
 
 .prater {
-	font-family: "ff-prater-block-web",sans-serif;
+	font-family: $prater;
+}
+
+.league, .lato, .prater {
+	font-size: 1.5rem;
+}
+
+.type-caption {
+	font-size: 0.8rem;
+}
+
+.exampleh1 {
+	font-family: $league;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
+}
+
+.examplekidsh1 {
+	font-family: $prater;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+}
+
+.exampleh2 {
+	font-family: $league;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+.examplekidsh2 {
+	font-family: $prater;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+.exampleh3 {
+	font-family: $league;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.exampleintro {
+	font-family: $lato;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1.5rem;
+}
+
+.exampleprimp {
+	font-family: $lato;
+	font-size: 1.25rem;
+}
+
+.examplesecp {
+	font-family: $lato;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+.exampleprima {
+	font-family: $lato;
+	font-size: 1.25rem;
+	line-height: 1.8;
+	font-style: italic;
+}
+
+.exampleseca {
+	font-family: $lato;
+	font-size: 1rem;
+	line-height: 1.6;
+	font-style: italic;
+}
+
+.examplecaption {
+	font-size: .9rem;
+	line-height: 1.2;
+	font-family: $lato;
 }

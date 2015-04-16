@@ -58,7 +58,8 @@ table {
 
 .nav-collapse li {
   width: 100%;
-  display: block; }
+  display: block;
+  margin-bottom: 0.5rem; }
 
 .js .nav-collapse {
   clip: rect(0 0 0 0);
@@ -67,7 +68,7 @@ table {
   display: block;
   overflow: hidden;
   zoom: 1;
-  background-color: #c4c4c4;
+  background-color: #919191;
   float: right;
   width: 100%; }
 
@@ -82,7 +83,7 @@ table {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  background-color: #c4c4c4;
+  background-color: #919191;
   float: right;
   overflow: hidden;
   width: 40%;
@@ -97,7 +98,12 @@ table {
     max-height: none; }
 
   .nav-toggle {
-    display: none; } }
+    display: none; }
+
+  .nav-collapse ul {
+    float: left;
+    margin-left: 5%;
+    text-align: left; } }
 body {
   font-family: "Helvetica-Neue", Helvetica, sans-serif; }
 
@@ -105,26 +111,90 @@ p {
   line-height: 1.8;
   font-size: 1rem; }
 
-h1, h2 {
+h1, h2, h3 {
   line-height: 1.3; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
 .league {
-  font-family: "league-gothic",sans-serif; }
+  font-family: "league-gothic", sans-serif; }
 
 .lato {
-  font-family: "league-gothic",sans-serif; }
+  font-family: "lato", sans-serif; }
 
 .prater {
-  font-family: "ff-prater-block-web",sans-serif; }
+  font-family: "ff-prater-block-web", sans-serif; }
+
+.league, .lato, .prater {
+  font-size: 1.5rem; }
+
+.type-caption {
+  font-size: 0.8rem; }
+
+.exampleh1 {
+  font-family: "league-gothic", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 1px; }
+
+.examplekidsh1 {
+  font-family: "ff-prater-block-web", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.5rem; }
+
+.exampleh2 {
+  font-family: "league-gothic", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem; }
+
+.examplekidsh2 {
+  font-family: "ff-prater-block-web", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem; }
+
+.exampleh3 {
+  font-family: "league-gothic", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.exampleintro {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.5rem; }
+
+.exampleprimp {
+  font-family: "lato", sans-serif;
+  font-size: 1.25rem; }
+
+.examplesecp {
+  font-family: "lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6; }
+
+.exampleprima {
+  font-family: "lato", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  font-style: italic; }
+
+.exampleseca {
+  font-family: "lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic; }
+
+.examplecaption {
+  font-size: .9rem;
+  line-height: 1.2;
+  font-family: "lato", sans-serif; }
 
 header {
-  background-color: #c4c4c4; }
+  background-color: #919191; }
   header h1 {
     color: white;
     width: 90%;
@@ -146,27 +216,36 @@ header {
 .green {
   background-color: #5a7b52; }
 
+.icon {
+  background-color: #919191; }
+
+.nav-collapse a {
+  color: white; }
+
+.nav-toggle {
+  color: white; }
+
 /***general***/
 .wrapper {
   width: 90%;
   max-width: 800px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 15rem; }
+  padding-top: 8rem; }
 
 header {
   overflow: hidden;
   position: fixed;
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-  header h1 {
-    width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  header .header-logo {
+    width: 30%;
     float: left;
     margin-left: 5%; }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   max-width: 650px; }
 
 img {
@@ -184,11 +263,35 @@ h2 {
   width: 200px;
   margin-top: 2rem; }
 
+/*type*/
+.league, .lato, .prater {
+  margin-top: 2rem; }
+
+.examples {
+  margin-top: 2rem; }
+
+/*logos*/
+.logo {
+  width: 30%; }
+
+.biglogo {
+  width: 50%;
+  margin-right: 10%; }
+
+/*icon*/
+.icon {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem; }
+
 @media screen and (min-width: 650px) {
   header {
     float: left;
     width: 150px;
     height: 100%; }
+    header .header-logo {
+      width: 70%;
+      margin-bottom: 1rem; }
 
   .wrapper {
     width: calc(100% - 210px);
