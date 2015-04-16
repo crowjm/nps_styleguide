@@ -1,164 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>National Park Service Style Guide</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/responsive-nav.js"></script>
-</head>
-<body>
-	<header>
-		<h1>National Park System Style Guide</h1>
-		<nav class="nav-collapse">
-			<ul>
-				<li><a href="#">process</a></li>
-				<li><a href="#">grid</a></li>
-				<li><a href="#">color</a></li>
-				<li><a href="#">type</a></li>
-				<li><a href="#">logo</a></li>
-				<li><a href="#">icon</a></li>
-				<li><a href="#">other elements</a></li>
-				<li><a href="#">images</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="wrapper">
-		<div class="info" id="intro">
-			<h2>Introduction</h2>
-			<p>Wallace Stegner referred to the National Parks as "America's Best Idea." The idea of the Park Service began in the mid 1800s, when President Lincoln signed a law preserving Yosemite Valley and Mariposa Grove. In 1872, Congress established Yellowstone National Park, and in 1916 President Wilson established the National Park Service. Great Smoky Mountain National Park was chartered in 1934 and established in 1940 and is the most visited National Park.</p>
-			<p>One of the main problems the NPS is facing is that people who visit the Parks are primarily old and white, and their website isn't doing everything that it can to serve as a solution to this problem.</p>
-			<p>Their website currently feels exclusive and limited in terms of audience (both groups have links in the header that lead to special content). Keeping this part of the audience is important, but I also expanded to include millenials.</p>
-			<p>The website also feels antiquated and you have to dig on the website to find pictures that show the beauty and power of the parks.</p>
-			<p>Perhaps the biggest problem with their website is that it isn't cohesive with their social media presence. On social media channels, NPS feels youthful, exciting, and still retains the trustworthy feel a government branch should have. Their website does not reflect this.</p>
-			<p>My goals for this project were to make the NPS &amp; Smokies website have a more modern feel that appeals to millenials and also streamline the vibe of their social presence with their website. I also wanted to create a cohesive design system that could be applied to all Parks within the NPS system.</p>
-		</div>
-		<div class="info" id="process">
-			<h2>Process</h2>
-			<p>Single-origin coffee meditation pop-up authentic Pitchfork Wes Anderson, Banksy typewriter brunch church-key retro farm-to-table cold-pressed 3 wolf moon roof party. Readymade hella keffiyeh biodiesel literally ennui. Blue Bottle Williamsburg Pinterest Bushwick four dollar toast Carles. Irony selfies disrupt, 8-bit health goth leggings artisan typewriter cray keffiyeh. Marfa listicle chambray, gentrify mumblecore semiotics Williamsburg crucifix photo booth fashion axe. Roof party tousled Truffaut cronut banjo, migas XOXO pork belly butcher cred before they sold out letterpress. American Apparel hashtag Intelligentsia Etsy bespoke slow-carb, Bushwick Pitchfork sustainable Odd Future narwhal.</p>
-			<img src="img/mainlanding.JPG" alt="">
-			<img src="img/parklanding.JPG" alt="">
-			<img src="img/parkabout.JPG" alt="">
-			<img src="img/parkplantrip.JPG" alt="">
-			<img src="img/parkkids.JPG" alt="">
-			<img src="img/NPSmainpage-wireframe.jpg" alt="">
-			<img src="img/GSMNPplantrip-wireframe.jpg" alt="">
-			<img src="img/styletile.jpg" alt="">
-			<img src="img/NPSmainpage-comps.jpg" alt="">
-			<img src="img/GSMNPplantrip-comps.jpg" alt="">
-		</div>
-		<div class="info" id="grid">
-			<h2>Grid</h2>
-			<!--expand more, include kids page, and headers, etc.-->
-			<p>The main NPS page, and all Smokies pages (aside from the kids page) use the same grid mixin below the fold.</p>
-			<p>$col: 6.805%;
-			   $gut: 1.666%;
-			   @mixin grid($colnum) {
-			   width: ($col * $colnum) + ($gut * (($colnum) - 1));
-			   }</p>
-			<p>To implement for .main content, use {@include: grid(7); float: left; margin-right: ($col + (($gut) * 2);}.</p>
-			<p>To implement for .secondary content, use {@include: grid(4); float: right; margin-right: 0}.</p>
-		</div>
-		<div class="info" id="color">
-			<h2>Colors</h2>
-			<div>
-			<div class="colors teal"></div>
-			<p>$teal: #449591;</p>
-			<p>rgb(68,149,145)</p>
-		</div>
-		<div>
-			<div class="colors yellow"></div>
-			<p>$yellow: #f9c85b;</p>
-			<p>rgb(249,200,91)</p>
-		</div>
-		<div>
-			<div class="colors red"></div>
-			<p>$red: #ad2f25;</p>
-			<p>rgb(173,47,37)</p>
-		</div>
-		<div>
-			<div class="colors blue"></div>
-			<p>$blue: #0f5783;</p>
-			<p>rgb(15,87,131)</p>
-		</div>
-		<div>
-			<div class="colors green"></div>
-			<p>$green: #5a7b52;</p>
-			<p>rgb(90,123,82)</p>
-		</div>
-		</div>
-		<div class="info" id="type">
-			<h2>Typography</h2>
-			<div>
-				<p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
-				<p><a href="https://typekit.com/fonts/league-gothic">League Gothic</a> By The League of Movable Type</p>
-				<p>$header-font-fam: "league-gothic", sans-serif;</p>
+	<head>
+		<title>National Park Service Style Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/responsive-nav.js"></script>
+		<script src="//use.typekit.net/ioh6qlx.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+	</head>
+	<body>
+		<header>
+			<h1>National Park System Style Guide</h1>
+			<nav class="nav-collapse">
+				<ul>
+					<li><a href="#">process</a></li>
+					<li><a href="#">grid</a></li>
+					<li><a href="#">color</a></li>
+					<li><a href="#">type</a></li>
+					<li><a href="#">logo</a></li>
+					<li><a href="#">icon</a></li>
+					<li><a href="#">other elements</a></li>
+					<li><a href="#">images</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="wrapper">
+			<div class="info" id="intro">
+				<h2>Introduction</h2>
+				<p>Wallace Stegner referred to the National Parks as "America's Best Idea." The idea of the Park Service began in the mid 1800s, when President Lincoln signed a law preserving Yosemite Valley and Mariposa Grove. In 1872, Congress established Yellowstone National Park, and in 1916 President Wilson established the National Park Service. Great Smoky Mountain National Park was chartered in 1934 and established in 1940 and is the most visited National Park.</p>
+				<p>One of the main problems the NPS is facing is that people who visit the Parks are primarily older, and their website isn't doing everything that it can to serve as a solution to this problem.</p>
+				<p>Their website currently feels exclusive and limited in terms of audience (both groups have links in the header that lead to special content). Keeping this part of the audience is important, but I also expanded to include millenials.</p>
+				<p>The website also feels antiquated and you have to dig on the website to find pictures that show the beauty and power of the parks.</p>
+				<p>Perhaps the biggest problem with their website is that it isn't cohesive with their social media presence. On social media channels, NPS feels youthful, exciting, and still retains the trustworthy feel a government branch should have. Their website does not reflect this.</p>
+				<p>My goals for this project were to make the NPS &amp; Smokies website have a more modern feel that appeals to millenials and also streamline the vibe of their social presence with their website. I also wanted to create a cohesive design system that could be applied to all Parks within the NPS system.</p>
 			</div>
-			<div>
-				<p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
-				<p><a href="https://typekit.com/fonts/lato">Lato</a> By Łukasz Dziedzic</p>
-				<p>$body-copy-font-fam: "lato", sans-serif;</p>
+			<div class="info" id="process">
+				<h2>Process</h2>
+				<p>For the research and discovery phase, I completed a wordlist, SWOT analysis, competitive market study, website analysis, sketches, wireframes, styletiles, and comps.</p>
+				<img src="img/mainlanding.JPG" alt="">
+				<img src="img/parklanding.JPG" alt="">
+				<img src="img/parkabout.JPG" alt="">
+				<img src="img/parkplantrip.JPG" alt="">
+				<img src="img/parkkids.JPG" alt="">
+				<img src="img/NPSmainpage-wireframe.jpg" alt="">
+				<img src="img/GSMNPplantrip-wireframe.jpg" alt="">
+				<img src="img/styletile.jpg" alt="">
+				<img src="img/NPSmainpage-comps.jpg" alt="">
+				<img src="img/GSMNPplantrip-comps.jpg" alt="">
 			</div>
-			<div>
-				<p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
-				<p><a href="https://typekit.com/fonts/ff-prater-block-web">FF Prater Block Web</a> By FontFont</p>
-				<p>$kids-header-font-fam: "ff-prater-block-web", sans-serif;</p>
+			<div class="info" id="grid">
+				<h2>Grid</h2>
+				<!--expand more, include kids page, and headers, etc.-->
+				<p>The main NPS page, and all Smokies pages (aside from the kids page) use the same grid mixin below the fold.</p>
+				<p>$col: 6.805%;<br>
+					$gut: 1.666%;<br>
+					@mixin grid($colnum) {
+					width: ($col * $colnum) + ($gut * (($colnum) - 1));
+				}</p>
+				<p>To implement for .main content, use<br>{@include: grid(7); float: left; margin-right: ($col + (($gut) * 2);}</p>
+				<p>To implement for .secondary content, use<br>{@include: grid(4); float: right; margin-right: 0}</p>
 			</div>
-			<h1>This is an h1.</h1>
-			<p class="type-caption">League Gothic | 400 | uppercase | 3.5rem/1.3</p>
-			<h1>This is an h1 on the kids page.</h1>
-			<p class="type-caption">FF Prater Block Web | 400 | uppercase | 3.5rem/1.3</p>
-			<h2>This is an h2.</h2>
-			<p class="type-caption">League Gothic | 400 | uppercase | 2.5rem/1.3</p>
-			<h2>This is an h2 on the kids page.</h2>
-			<p class="type-caption">FF Prater Block Web | 400 | uppercase | 2.5rem/1.3</p>
-			<h3>This is an h3.</h3>
-			<p class="type-caption">League Gothic | 400 | uppercase | 2rem/1.3
-			</p>
-			<p>This is introductory, above the fold text.</p>
-			<p class="type-caption">League Gothic | 300 | italic | 1.5rem/1.8</p>
-			<p>This is a primary paragraph.</p>
-			<p class="type-caption">Lato | 400 | 1.25rem/1.8</p>
-			<p>This is a secondary paragraph.</p>
-			<p class="type-caption">Lato | 400 | 1rem/1.8</p>
-			<p>This is a primary link.</p>
-			<p class="type-caption">Lato | 400 | italic | 1.25rem/1.8</p>
-			<p>This is a secondary link.</p>
-			<p class="type-caption">Lato | 400 | italic | 1rem/1.8</p>
-			<p>This is a caption.</p>
-			<p class="type-caption">Lato | 400 | .9rem/1.2</p>
-		</div>
-		<div class="info" id="logo">
-			<h2>Logos</h2>
-			<p>I created a cohesive, scalable logo system for this project. I wanted each park to have their own logo, while still being able to be identified as part of the NPS. I also created a small and large version of each logo to use on different sized screens. I wanted to use a patch-like system to play on vintage National Park stickers.</p>
-			<img src="img/nps-logo-large.png" alt="" class="logo">
-			<img src="img/nps-logo-small.png" alt="" class="logo">
-			<p>For the main NPS logo, I wanted to keep a reference to their iconic arrowhead logo while bringing it into the patch system and creating additional meanings.</p>
-			<img src="img/smokies-logo-large.png" alt="" class="logo">
-			<img src="img/smokies-logo-small.png" alt="" class="logo">
-			<p>Great Smoky Mountains National Park is known for bears, salamanders, and wildflowers. I chose the bear for their logo as it is their most prominent symbol.</p>	
-		</div>
-		<div class="info" id="icon">
-			<h2>Icon Set</h2>
-			<div>
-				<img src="img/hat.png" class="icon">
-				<img src="img/backpack.png" class="icon">
-				<img src="img/dulcimer.png" class="icon">
-				<img src="img/map.png" class="icon">
-				<img src="img/wildflower.png" class="icon">
-				<img src="img/warning.png" class="icon">
+			<div class="info" id="color">
+				<h2>Colors</h2>
+				<div>
+					<div class="colors teal"></div>
+					<p>$teal: #449591;<br>rgb(68,149,145)</p>
+				</div>
+				<div>
+					<div class="colors yellow"></div>
+					<p>$yellow: #f9c85b;<br>rgb(249,200,91)</p>
+				</div>
+				<div>
+					<div class="colors red"></div>
+					<p>$red: #ad2f25;<br>rgb(173,47,37)</p>
+				</div>
+				<div>
+					<div class="colors blue"></div>
+					<p>$blue: #0f5783;<br>rgb(15,87,131)</p>
+				</div>
+				<div>
+					<div class="colors green"></div>
+					<p>$green: #5a7b52;<br>rgb(90,123,82)</p>
+				</div>
+			</div>
+			<div class="info" id="type">
+				<h2>Typography</h2>
+				<div>
+					<p class="league">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+					<p><a href="https://typekit.com/fonts/league-gothic">League Gothic</a> By The League of Movable Type</p>
+					<p>$header-font-fam: "league-gothic", sans-serif;</p>
+				</div>
+				<div>
+					<p class="lato">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+					<p><a href="https://typekit.com/fonts/lato">Lato</a> By Łukasz Dziedzic</p>
+					<p>$body-copy-font-fam: "lato", sans-serif;</p>
+				</div>
+				<div>
+					<p class="prater">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</p>
+					<p><a href="https://typekit.com/fonts/ff-prater-block-web">FF Prater Block Web</a> By FontFont</p>
+					<p>$kids-header-font-fam: "ff-prater-block-web", sans-serif;</p>
+				</div>
+				<h1>This is an h1.</h1>
+				<p class="type-caption">League Gothic | 400 | uppercase | 3.5rem/1.3</p>
+				<h1>This is an h1 on the kids page.</h1>
+				<p class="type-caption">FF Prater Block Web | 400 | uppercase | 3.5rem/1.3</p>
+				<h2>This is an h2.</h2>
+				<p class="type-caption">League Gothic | 400 | uppercase | 2.5rem/1.3</p>
+				<h2>This is an h2 on the kids page.</h2>
+				<p class="type-caption">FF Prater Block Web | 400 | uppercase | 2.5rem/1.3</p>
+				<h3>This is an h3.</h3>
+				<p class="type-caption">League Gothic | 400 | uppercase | 2rem/1.3
+				</p>
+				<p>This is introductory, above the fold text.</p>
+				<p class="type-caption">League Gothic | 300 | italic | 1.5rem/1.8</p>
+				<p>This is a primary paragraph.</p>
+				<p class="type-caption">Lato | 400 | 1.25rem/1.8</p>
+				<p>This is a secondary paragraph.</p>
+				<p class="type-caption">Lato | 400 | 1rem/1.8</p>
+				<p>This is a primary link.</p>
+				<p class="type-caption">Lato | 400 | italic | 1.25rem/1.8</p>
+				<p>This is a secondary link.</p>
+				<p class="type-caption">Lato | 400 | italic | 1rem/1.8</p>
+				<p>This is a caption.</p>
+				<p class="type-caption">Lato | 400 | .9rem/1.2</p>
+			</div>
+			<div class="info" id="logo">
+				<h2>Logos</h2>
+				<p>I created a cohesive, scalable logo system for this project. I wanted each park to have their own logo, while still being able to be identified as part of the NPS. I also created a small and large version of each logo to use on different sized screens. I wanted to use a patch-like system to play on vintage National Park stickers.</p>
+				<img src="img/nps-logo-large.png" alt="" class="logo">
+				<img src="img/nps-logo-small.png" alt="" class="logo">
+				<p>For the main NPS logo, I wanted to keep a reference to their iconic arrowhead logo while bringing it into the patch system and creating additional meanings.</p>
+				<img src="img/smokies-logo-large.png" alt="" class="logo">
+				<img src="img/smokies-logo-small.png" alt="" class="logo">
+				<p>Great Smoky Mountains National Park is known for bears, salamanders, and wildflowers. I chose the bear for their logo as it is their most prominent symbol.</p>
+			</div>
+			<div class="info" id="icon">
+				<h2>Icon Set</h2>
+				<div>
+					<img src="img/hat.png" class="icon">
+					<img src="img/backpack.png" class="icon">
+					<img src="img/dulcimer.png" class="icon">
+					<img src="img/map.png" class="icon">
+					<img src="img/wildflower.png" class="icon">
+					<img src="img/warning.png" class="icon">
+				</div>
+			</div>
+			<div class="info" id="elements">
+				
+			</div>
+			<div class="info" id="images">
+				
 			</div>
 		</div>
-		<div class="info" id="elements">
-			
-		</div>
-		<div class="info" id="images">
-			
-		</div>
-	</div>
-
-	<script>
-  var nav = responsiveNav(".nav-collapse");
-</script>
-</body>
+		<script>
+		var nav = responsiveNav(".nav-collapse");
+		</script>
+	</body>
 </html>

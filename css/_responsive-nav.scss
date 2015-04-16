@@ -3,7 +3,9 @@
 .nav-collapse ul {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 35%;
+  float: right;
+  margin-right: 5%;
   display: block;
   list-style: none;
   text-align: right;
@@ -41,6 +43,9 @@
   background-color: darken(#f7f7f7, 20%);
   float: right;
   overflow: hidden;
+  width: 40%;
+  margin-right: 5%;
+  text-align: right;
 }
 
 @media screen and (min-width: 40em) {
