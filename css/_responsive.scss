@@ -1,0 +1,14 @@
+@media screen and (min-width: 650px) {
+	  header {
+    float: left;
+    width: 150px;
+    height: 100%;
+  }
+
+  .wrapper {
+    width: calc(100% - 210px);
+    margin: 0 auto;
+    padding-left: 180px;
+    padding-right: 30px;
+  }
+}

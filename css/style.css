@@ -51,7 +51,8 @@ table {
   padding: 0;
   width: 100%;
   display: block;
-  list-style: none; }
+  list-style: none;
+  text-align: right; }
 
 .nav-collapse li {
   width: 100%;
@@ -63,7 +64,10 @@ table {
   position: absolute;
   display: block;
   overflow: hidden;
-  zoom: 1; }
+  zoom: 1;
+  background-color: #c4c4c4;
+  float: right;
+  width: 100%; }
 
 .nav-collapse.opened {
   max-height: 9999px; }
@@ -75,7 +79,10 @@ table {
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none; }
+  user-select: none;
+  background-color: #c4c4c4;
+  float: right;
+  overflow: hidden; }
 
 @media screen and (min-width: 40em) {
   .js .nav-collapse {
@@ -86,26 +93,85 @@ table {
 
   .nav-toggle {
     display: none; } }
-.wrapper {
-  width: 90%;
-  max-width: 1300px;
-  margin-right: auto;
-  margin-left: auto; }
-
-p {
-  margin-bottom: 1.5rem;
-  max-width: 650px;
-  margin-right: auto;
-  margin-left: auto; }
-
-img {
-  width: 100%; }
-
 body {
   font-family: "Helvetica-Neue", Helvetica, sans-serif; }
 
 p {
   line-height: 1.8;
-  font-size: 1.1rem; }
+  font-size: 1rem; }
+
+h1, h2 {
+  line-height: 1.3; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+header {
+  background-color: #c4c4c4; }
+  header h1 {
+    color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto; }
+
+.teal {
+  background-color: #449591; }
+
+.yellow {
+  background-color: #f9c85b; }
+
+.red {
+  background-color: #ad2f25; }
+
+.blue {
+  background-color: #0f5783; }
+
+.green {
+  background-color: #5a7b52; }
+
+/***general***/
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 12rem; }
+
+header {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+p {
+  margin-bottom: 1.5rem;
+  max-width: 650px; }
+
+img {
+  max-width: 100%; }
+
+.info {
+  margin-bottom: 4rem; }
+
+/*colors*/
+.colors {
+  height: 150px;
+  width: 150px; }
+
+@media screen and (min-width: 650px) {
+  header {
+    float: left;
+    width: 150px;
+    height: 100%; }
+
+  .wrapper {
+    width: calc(100% - 210px);
+    margin: 0 auto;
+    padding-left: 180px;
+    padding-right: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

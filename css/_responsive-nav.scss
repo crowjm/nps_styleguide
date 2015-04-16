@@ -6,6 +6,7 @@
   width: 100%;
   display: block;
   list-style: none;
+  text-align: right;
 }
 
 .nav-collapse li {
@@ -20,6 +21,9 @@
   display: block;
   overflow: hidden;
   zoom: 1;
+  background-color: darken(#f7f7f7, 20%);
+  float: right;
+  width: 100%;
 }
 
 .nav-collapse.opened {
@@ -34,6 +38,9 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  background-color: darken(#f7f7f7, 20%);
+  float: right;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 40em) {
